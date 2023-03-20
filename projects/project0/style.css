@@ -6,8 +6,45 @@ div {
 	color: white;
 	background-color: blue;
 	margin-left: 570px;
+	border : none;
+	padding: 10px;
 }
 
-.field_align {
+.adv_fields input[type=text] {
+	border: 1px solid lightgrey;
 	width: 500px;
+	padding: 7px;
+	/* to remove default browser's outline value around input when it gets focus */
+	outline: none;
 }
+
+.adv_fields input[type=text]:focus {
+	border: 1px solid blue;
+}
+
+.search input[type=text] {
+	margin-top : 200px;
+	margin-left: 400px;
+	padding: 10px;
+	width: 600px;
+	border: 1px solid lightgrey;
+	border-radius: 20px;
+}
+
+.search input[type=submit] {
+	padding:10px;
+	margin: 7px;
+	width: 120px;
+	font-size: 13px;
+	border: none;
+}
+
+#srch_button {
+	margin-left: 567px;
+}
+
+#img_srch_button {
+	margin-left: 650px;
+}
+
+	

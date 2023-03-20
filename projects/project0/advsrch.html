@@ -3,14 +3,15 @@
     <head>
         <title>Advanced Search</title>
 		<link rel="stylesheet" href="style.css">
+		
     </head>
     <body>
 		<div>
 			<a href="index.html"> Google search</a>
 		</div>
 		
-        <form action="https://google.com/search">
-		
+        <form action="https://google.com/search" class="adv_fields">
+			<!--
 			Find pages with...
 			<br/> <br/>
             all these words: <input type="text" name="as_q" style="margin-left: 80px;" class="field_align">
@@ -24,7 +25,24 @@
 			
 			none of these words: <input type="text" name="as_eq" style="margin-left: 45px;" class="field_align">
 			
-			<!-- so that button appears in next line -->
+			
+			<br/> <br/>
+			
+            <input type="submit" value="Advanced Search" id="adv_srch">
+			-->
+			Find pages with...
+			<br/> <br/>
+            all these words: <input type="text" name="as_q">
+			<br/> <br/>
+			
+			this exact word or phrase: <input type="text" name="as_epq">
+			<br/> <br/>
+			
+			any of these words: <input type="text" name="as_oq">
+			<br/> <br/>
+			
+			none of these words: <input type="text" name="as_eq">		
+			
 			<br/> <br/>
 			
             <input type="submit" value="Advanced Search" id="adv_srch">
