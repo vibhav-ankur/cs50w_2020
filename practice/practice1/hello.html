@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Elements</title>
+		
+		<!-- we can also do styling by adding <style> tags in the head-->
+		<style>
+			ul{
+				color: green;
+				text-align: center;
+			}
+		</style>
+		
+		<!-- we can also include in <link> element in head with link to .css file that contains styling -->
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- We can create headings using h1 through h6 as tags. -->
+        <h1>A Large Heading</h1>
+		<!-- change style by altering css properties of an element -->
+        <h2 style="color: blue; text-align: center;">A Smaller Heading</h2>
+        <h6>The Smallest Heading</h6>
+
+        <!-- The strong and i tags give us bold and italics respectively. -->
+        A <strong>bold</strong> word and an <i>italicized</i> word!
+
+        <!-- We can link to another page (such as cs50's page) using a. -->
+        View the <a href="https://cs50.harvard.edu/">CS50 Website</a>!
+
+        <!-- We used ul for an unordered list and ol for an ordered one. both ordered and unordered lists contain li, or list items. -->
+        An unordered list:
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+        An ordered list:
+		
+		<!-- if we style of an outer element,all of the inner elements automatically take on that style -->
+        <ol style="color: orange; text-align: center;">
+            <li>item 1</li>
+            <li>item 2</li>
+        </ol>
+
+        <!-- Images require a src attribute, which can be either the path to a file on your computer or the link to an image online. It also includes an alt attribute, which gives a description in case the image can't be loaded. -->
+        An image:
+        <img src="angels.jpg" alt="Picture">
+        <!-- We can also see above that for some elements that don't contain other ones, closing tags are not necessary. -->
+		
+		<!-- br tag for white space -->
+		<br/> <br/>
+		
+		<table>
+			<thead>
+				<th>Ocean</th>
+				<th>Avg depth</th>
+				<th>Max Depth</th>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>pacific ocean</td>
+					<td>4280</td>
+					<td>10911</td>
+				</tr>
+				
+				<tr>
+					<td>atlantic ocean</td>
+					<td>3646</td>
+					<td>8486</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
