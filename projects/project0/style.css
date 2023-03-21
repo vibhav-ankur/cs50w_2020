@@ -33,7 +33,7 @@ td {
 
 .search input[type=text] {
 	margin-top : 200px;
-	/*margin-left: 400px; for method 1 when i didn't know to align elements to center */
+	/*margin-left: 400px; for method 1 */
 	padding: 10px;
 	width: 600px;
 	border: 1px solid lightgrey;
@@ -54,7 +54,7 @@ td {
 	box-shadow: 0 0 2px 2px lightgrey;
 }
 
-/* for method 1
+/* for method 1 when i didn't know to align elements to center
 #srch_button {
 	margin-left: 567px;
 }
@@ -63,6 +63,7 @@ td {
 	margin-left: 650px;
 }	
 */
+
 .input, .search {
 	text-align: center;
 }
