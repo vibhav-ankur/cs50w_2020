@@ -50,7 +50,8 @@ td {
 }
 
 .search input[type=submit]:hover, input[type=text]:hover, input[type=text]:focus {
-	border: 1px solid grey;
+	/*border: 1px solid grey;*/
+	box-shadow: 0 0 2px 2px lightgrey;
 }
 
 #srch_button {
