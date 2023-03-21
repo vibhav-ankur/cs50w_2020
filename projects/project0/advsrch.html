@@ -11,42 +11,52 @@
 		</div>
 		
         <form action="https://google.com/search" class="adv_fields">
-			<!--
 			Find pages with...
 			<br/> <br/>
-            all these words: <input type="text" name="as_q" style="margin-left: 80px;" class="field_align">
+			
+			<!-- mehtod 1:
+            all these words: <input type="text" name="as_q" style="margin-left: 80px;">
 			<br/> <br/>
 			
-			this exact word or phrase: <input type="text" name="as_epq" style="margin-left: 15px;" class="field_align">
+			this exact word or phrase: <input type="text" name="as_epq" style="margin-left: 15px;">
 			<br/> <br/>
 			
-			any of these words: <input type="text" name="as_oq" style="margin-left: 55px;" class="field_align">
+			any of these words: <input type="text" name="as_oq" style="margin-left: 55px;">
 			<br/> <br/>
 			
-			none of these words: <input type="text" name="as_eq" style="margin-left: 45px;" class="field_align">
+			none of these words: <input type="text" name="as_eq" style="margin-left: 45px;">
 			
 			
 			<br/> <br/>
 			
             <input type="submit" value="Advanced Search" id="adv_srch">
 			-->
-			Find pages with...
-			<br/> <br/>
-            all these words: <input type="text" name="as_q">
-			<br/> <br/>
 			
-			this exact word or phrase: <input type="text" name="as_epq">
-			<br/> <br/>
-			
-			any of these words: <input type="text" name="as_oq">
-			<br/> <br/>
-			
-			none of these words: <input type="text" name="as_eq">		
-			
-			<br/> <br/>
-			
-            <input type="submit" value="Advanced Search" id="adv_srch">
-			
+			<!-- Method 2: -->
+			<table>
+				<tbody>
+					<tr>
+						<td>all these words:</td>
+						<td><input type="text" name="as_q"></td>
+					</tr>
+					<tr>
+						<td>this exact word or phrase:</td>
+						<td><input type="text" name="as_epq"></td>
+					</tr>
+					<tr>
+						<td>any of these words:</td>
+						<td><input type="text" name="as_oq"></td>
+					</tr>
+					<tr>
+						<td>none of these words:</td>
+						<td><input type="text" name="as_eq"></td>		
+					</tr>
+					<tr>
+						<td> </td>
+						<td><input type="submit" value="Advanced Search" id="adv_srch"></td>
+					</tr>
+				</tbody>
+			</table>
         </form>
     </body>
 </html>
