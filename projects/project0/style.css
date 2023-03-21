@@ -33,7 +33,7 @@ td {
 
 .search input[type=text] {
 	margin-top : 200px;
-	margin-left: 400px;
+	/*margin-left: 400px; for method 1 when i didn't know to align elements to center */
 	padding: 10px;
 	width: 600px;
 	border: 1px solid lightgrey;
@@ -49,15 +49,20 @@ td {
 	border: none;
 }
 
-.search input[type=submit]:hover, input[type=text]:hover, input[type=text]:focus {
+.search input[type=submit]:hover, .search input[type=text]:hover, .search input[type=text]:focus {
 	/*border: 1px solid grey;*/
 	box-shadow: 0 0 2px 2px lightgrey;
 }
 
+/* for method 1
 #srch_button {
 	margin-left: 567px;
 }
 
 #img_srch_button {
 	margin-left: 650px;
+}	
+*/
+.input, .search {
+	text-align: center;
 }
