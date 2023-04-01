@@ -1,0 +1,6 @@
+/* we need to restart the server so that djnago loads static file */ 
+h1 {
+	font-family: sans-serif;
+	font-size: 90px;
+	text-align: center;
+}
