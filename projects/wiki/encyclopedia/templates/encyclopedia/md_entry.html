@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title> Encyclopedia </title>
+	</head>	
+	<body>	
+		<form action="{% url 'md_entry' title %}" method="post">
+			{% csrf_token %}
+			<textarea name="md_content" rows="30" cols="80">{{md_content}}</textarea>
+			<br>
+			<input type="submit" value="Save">
+		</form>
+	</body>
+</html>

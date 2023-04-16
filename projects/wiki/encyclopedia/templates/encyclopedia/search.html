@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title> Encyclopedia </title>
+	</head>
+	
+	<body>
+		{% if message %}
+			{{message}}			
+		{% endif %}
+		
+		<ul>
+			{% for entry in entries %}
+				<!-- <li><a href='wiki/{{entry}}'> {{entry}} </li> -->
+				<li><a href='{% url "entry" entry %}'>{{entry}}</a></li>				
+			{% endfor %}
+		</ul>		
+		<a href="{% url 'index' %}"> Back to Search </a> new query
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title> Encyclopedia </title>
+		<style>
+			.links{
+				margin-right: 30px;
+			}
+		</style>
+	</head>	
+	<body>		
+		{{entry|safe}}
+		<a class= "links" href="{% url 'md_entry' title %}">Edit Page</a> 
+		<a class= "links" href="{% url 'index' %}">Back to Index</a>
+	</body>
+</html>

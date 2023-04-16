@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title> Encyclopedia </title>
+		<style>
+			.links{
+				margin-right: 30px;
+			}
+		</style>
+	</head>	
+	<body>
+		{% if message %}
+			{{message}}
+			<a class= "links" href="{% url 'index' %}">Back to Index</a>
+		{% else %}
+			<form action="{% url 'new_page' %}" method="post">
+				{% csrf_token %}
+				<textarea name="new_content" rows="30" cols="80"></textarea>
+				<br>
+				Enter Title:
+				<input type="text", name="title">
+				<input type="submit", value="Save">			
+			</form>
+		{% endif %}
+	</body>
+</html>
